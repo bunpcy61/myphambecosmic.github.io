@@ -1,0 +1,477 @@
+body{
+	padding: 0;
+	margin: 0;
+
+}
+
+.rounded-circle1{
+	
+	transition:6s;
+	animation: xoayvong 6s linear 0s infinite;
+	width: 16%;
+}
+.bg_dark{
+	background-color:#66CCFF;
+}
+.nav-link{
+    font-weight: bold;
+    text-transform: uppercase;
+    color: black;
+}
+.top_header{
+	display: flex;
+	font-weight: bold;
+	font-size: 20px;
+	width: 100%;
+    height: 178px;
+    position: relative;
+	
+}
+.top_header .opa{
+	font-weight: bold;
+	font-size: 20px;
+	
+	display: flex;
+	position: absolute;
+    z-index:999;
+    width: 100%;
+
+}
+.top_header::after{
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index:-99;
+  background-color: pink;
+  background-size: cover;
+  opacity: 0.6;
+}
+.chuChay{
+	color: black;
+	font-size: 30px;
+	padding-top: 30px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-top: 10px;
+	animation: chayChu 3s forwards;
+	transition:3s;
+	text-align: center;
+
+}
+.logo{
+	display: flex;
+
+}
+.logo li{
+	list-style-type: none ;
+}
+.product{
+	background-color: white;
+}
+hr{
+	background-color: white;
+}
+@-webkit-keyframes xoayvong{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+
+        transform:rotate(360deg);
+    }
+}
+@-webkit-keyframes phongto{
+   from{
+   	   	transform: scale(0);
+   }
+   to{
+   		transform: scale(1);
+   }
+}
+@-webkit-keyframes chayChu{
+   from{
+   	   	opacity: 0;
+   	   	margin-left: -1800px;
+   	   	transform: rotate(-90deg)
+   }
+   to{
+   		opacity: 1;
+   	   	margin-left: -150;
+
+   }
+}
+@-webkit-keyframes xemSP{
+   from{
+   	   	opacity: 0;
+   	   	margin-left: 0;
+   }
+   to{
+   		opacity: 1;
+   	   	margin-left: 50px;
+
+   }
+}
+@-webkit-keyframes xemSP2{
+   from{
+   	   	opacity: 0;
+   	   	margin-left: 0;
+   }
+   to{
+   		opacity: 1;
+   	   	margin-right: 50px;
+
+   }
+}
+@-webkit-keyframes danhGia{
+   from{
+   	   	opacity: 0;
+   	   	top: 280px;
+   }
+   to{
+   		opacity: 0.9;
+   	   	top: 180px;
+
+   }
+}
+.card_add{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+.card_add a{
+	text-align: center;
+	margin-left: 2.5px;
+}
+.card-img-top{
+	position: relative;
+}
+.anh_hover{
+	position: absolute;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 10px;
+	top: 250px;
+	opacity: 0;
+}
+.danhGia{
+	position: absolute;
+	top: 250px;
+	background-color:#FFE7BA;
+	color: black;
+	justify-content: space-between;
+	padding: 15px 62px 15px 15px;
+	opacity: 0.8;
+	opacity: 0;
+}
+
+.danhGia a i{
+	color:#FFB90F;
+	font-size: 25px;
+}
+.anh1_hover{
+	position: absolute;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 10px;
+	top: 250px;
+	right: 0;
+	opacity: 0;
+	
+
+}
+.card:hover .anh_hover{
+	opacity: 1;
+	animation: xemSP 1s forwards;
+	transition: 2s;
+}
+
+.card:hover .anh1_hover{
+	opacity: 1;
+	animation: xemSP2 1s forwards;
+	transition: 2s;
+
+}
+.card:hover .danhGia{
+	opacity: 0.9;
+	animation: danhGia 1s forwards;
+	transition: 1s;
+	
+}
+.card:hover{
+	padding: 5px;
+
+}
+.card_hover:hover{
+	padding: 5px;	
+}
+
+.price .product-price {
+     font-size: 16px !important; 
+}
+@media screen and (max-width: 768px){
+	.top_header{
+		width: 100%;
+		height: 50px;
+	}
+	.rounded-circle1{
+		display: none;
+	}
+	.chuChay{
+		display: none;
+	}
+}
+@media screen and (max-width: 1199px){
+	.card_add{
+		margin-left: -17px;
+	}
+}
+
+@media screen and (max-width: 767px){
+	.card_add{
+		margin-left: -4px;
+	}
+}
+
+@media screen and (max-width: 575px){
+	.card_add{
+		margin-left: 0px;
+	}
+}
+//------------------------CSSfooter------------------------------------------
+.navbar {
+  padding: 0;
+  height: 50px;
+
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.navbar li {
+  position: relative;
+}
+
+.navbar > ul > li {
+  white-space: nowrap;
+  padding: 10px 0 10px 28px;
+}
+
+.navbar a, .navbar a:focus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #222222;
+  white-space: nowrap;
+  transition: 0.3s;
+  position: relative;
+}
+
+.navbar a i, .navbar a:focus i {
+  font-size: 12px;
+  line-height: 0px
+  margin-left: 5px;
+}
+
+.navbar > ul > li > a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -6px;
+  left: 0;
+  background-color: #8B008B;
+  visibility: hidden;
+  width: 0px;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.navbar a:hover:before, .navbar li:hover > a:before, .navbar .active:before {
+  visibility: visible;
+  width: 100%;
+}
+
+.navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
+  color: #8B008B;
+}
+
+.navbar .dropdown ul {
+  display: block;
+  position: absolute;
+  left: 28px;
+  top: calc(100% + 30px);
+  margin: 0;
+  padding: 10px 0;
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  background: #fff;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  transition: 0.3s;
+}
+
+.navbar .dropdown ul li {
+  min-width: 200px;
+  text-decoration: none;
+}
+
+.navbar .dropdown ul a {
+  padding: 10px 20px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
+  color: #8B008B;
+}
+
+.navbar .dropdown:hover > ul {
+  opacity: 1;
+  top: 100%;
+  visibility: visible;
+}
+
+.navbar .dropdown .dropdown ul {
+  top: 0;
+  left: calc(100% - 30px);
+  visibility: hidden;
+}
+
+.navbar .dropdown .dropdown:hover > ul {
+  opacity: 1;
+  top: 0;
+  left: 100%;
+  visibility: visible;
+}
+
+@media (max-width: 1366px) {
+  .navbar .dropdown .dropdown ul {
+    left: -90%;
+  }
+  .navbar .dropdown .dropdown:hover > ul {
+    left: -100%;
+  }
+}
+@media (max-width: 750px) {
+  .navbar {
+  padding: 0;
+
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  align-items: center;
+}
+
+.navbar li {
+  position: relative;
+}
+
+.navbar > ul > li {
+  white-space: wrap;
+  padding: 10px 0 10px 28px;
+}
+
+.navbar a, .navbar a:focus {
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #222222;
+  white-space: wrap;
+  transition: 0.3s;
+  position: relative;
+}
+
+.navbar a i, .navbar a:focus i {
+  font-size: 12px;
+  line-height: 0;
+  margin-left: 5px;
+}
+
+.navbar > ul > li > a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -6px;
+  left: 0;
+  background-color: #8B008B;
+  visibility: hidden;
+  width: 0px;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.navbar a:hover:before, .navbar li:hover > a:before, .navbar .active:before {
+  visibility: visible;
+  width: 100%;
+}
+
+.navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
+  color: #8B008B;
+}
+
+.navbar .dropdown ul {
+  display: block;
+  position: absolute;
+  left: 28px;
+  top: calc(100% + 30px);
+  margin: 0;
+  padding: 10px 0;
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  background: #fff;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  transition: 0.3s;
+}
+
+.navbar .dropdown ul li {
+  min-width: 200px;
+  text-decoration: none;
+}
+
+.navbar .dropdown ul a {
+  padding: 10px 20px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
+  color: #8B008B;
+}
+
+.navbar .dropdown:hover > ul {
+  opacity: 1;
+  top: 100%;
+  visibility: visible;
+}
+
+.navbar .dropdown .dropdown ul {
+  top: 0;
+  left: calc(100% - 30px);
+  visibility: hidden;
+}
+
+.navbar .dropdown .dropdown:hover > ul {
+  opacity: 1;
+  top: 0;
+  left: 100%;
+  visibility: visible;
+}
+
+}

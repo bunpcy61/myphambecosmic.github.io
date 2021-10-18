@@ -1,0 +1,320 @@
+body{
+	padding: 0;
+	margin: 0;
+	background-image: url("../images/background_SanPham.jpg");
+  background-attachment:scroll;
+  background-attachment: fixed;
+
+}
+
+.rounded-circle1{
+	
+	transition:6s;
+	animation: xoayvong 6s linear 0s infinite;
+	width: 16%;
+}
+.bg_dark{
+	background-color:#66CCFF;
+}
+.nav-link{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.top_header{
+	display: flex;
+	font-weight: bold;
+	font-size: 20px;
+	width: 100%;
+    height: 178px;
+    position: relative;
+	
+}
+.top_header .opa{
+	font-weight: bold;
+	font-size: 20px;
+	
+	display: flex;
+	position: absolute;
+    z-index:999;
+    width: 100%;
+
+}
+.top_header::after{
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index:-99;
+  background-color: #8B8989;
+  background-size: cover;
+  opacity: 0.6;
+}
+.chuChay{
+	color: black;
+	text-shadow: 4px 0 5px  white;
+	font-size: 30px;
+	padding-top: 30px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-top: 10px;
+	animation: chayChu 3s forwards;
+	transition:3s;
+	text-align: center;
+
+}
+.logo{
+	display: flex;
+
+}
+.logo li{
+	list-style-type: none ;
+}
+
+@-webkit-keyframes xoayvong{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+
+        transform:rotate(360deg);
+    }
+}
+@-webkit-keyframes phongto{
+   from{
+   	   	transform: scale(0);
+   }
+   to{
+   		transform: scale(1);
+   }
+}
+@-webkit-keyframes chayChu{
+   from{
+   	   	opacity: 0;
+   	   	margin-left: -1800px;
+   	   	transform: rotate(-90deg)
+   }
+   to{
+   		opacity: 1;
+   	   	margin-left: -150;
+
+   }
+}
+@-webkit-keyframes xemSP{
+   from{
+   	   	opacity: 0;
+   	   	margin-left: 0;
+   }
+   to{
+   		opacity: 1;
+   	   	margin-left: 10px;
+
+   }
+}
+@-webkit-keyframes xemSP2{
+   from{
+   	   	opacity: 0;
+   	   	margin-left: 0;
+   }
+   to{
+   		opacity: 1;
+   	   	margin-right: 10px;
+
+   }
+}
+
+.card_add{
+	display: flex;
+}
+.card_add a{
+	text-align: center;
+	margin-left: 2.5px;
+}
+.card-img-top{
+	position: relative;
+}
+.anh_hover{
+	position: absolute;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 10px;
+	top: 180px;
+	opacity: 0;
+}
+
+.anh1_hover{
+	position: absolute;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 10px;
+	top: 180px;
+	right: 0;
+	opacity: 0;
+	
+
+}
+.card:hover .anh_hover{
+	opacity: 1;
+	animation: xemSP 1s forwards;
+	transition: 2s;
+}
+
+.card:hover .anh1_hover{
+	opacity: 1;
+	animation: xemSP2 1s forwards;
+	transition: 2s;
+
+}
+
+.card:hover{
+	padding: 5px;
+}
+.card_hover:hover{
+	padding: 5px;
+}
+.card_hover{
+
+}
+@media screen and (max-width: 768px){
+	.top_header{
+		width: 100%;
+		height: 50px;
+	}
+	.rounded-circle1{
+		display: none;
+	}
+	.chuChay{
+		display: none;
+	}
+}
+@media screen and (max-width: 1199px){
+	.card_add{
+		margin-left: -17px;
+	}
+}
+
+@media screen and (max-width: 767px){
+	.card_add{
+		margin-left: -4px;
+	}
+}
+
+@media screen and (max-width: 575px){
+	.card_add{
+		margin-left: 0px;
+	}
+}
+.danhGia{
+	position: absolute;
+	top: 250px;
+	background-color:#FFE7BA;
+	color: black;
+	justify-content: space-between;
+	padding: 15px 62px 15px 15px;
+	opacity: 0.8;
+	opacity: 0;
+}
+
+.danhGia a i{
+	color:#FFB90F;
+	font-size: 25px;
+}
+.card-img-top{
+	position: relative;
+}
+
+@-webkit-keyframes danhGia{
+   from{
+   	   	opacity: 0;
+   	   	top: 280px;
+   }
+   to{
+   		opacity: 0.9;
+   	   	top: 180px;
+
+   }
+}
+.card:hover .danhGia{
+	opacity: 0.9;
+	animation: danhGia 1s forwards;
+	transition: 1s;
+	
+}
+.content{
+	display: flex;
+	justify-content: center;
+
+	padding: 20px;
+}
+.right{
+	margin-left: 20px;
+}
+
+/*Like*/
+.bottom{
+	margin-left: 150px;
+}
+.bottom button{
+	width: 25%;
+
+}
+.bottom input{
+	border: 0;
+	padding: 0;
+	width: 10%;
+}
+.bottom button a{
+	text-decoration: none;
+	color: white;
+}
+span{
+	margin-left: 5px;
+}
+.mua{
+	display: flex;
+}
+.mua .tru button{
+	border: 1px solid gray;
+	padding: 11px 5px 11px 5px;
+	color: black;
+	text-decoration: none;
+}
+.mua .cong button{
+	border: 1px solid gray;
+	padding: 11px 3px 11px 3px;
+	color: black;
+	text-decoration: none;
+}
+.cong a{
+	text-decoration: none;
+}
+.tru a{
+	text-decoration: none;
+}
+.mua input{
+	border: none;
+	width: 20%;
+	padding-left: 75px ;
+	padding-bottom: 0px ;
+	border-top: 1px solid gray;
+	border-bottom: 1px solid gray;
+}
+.gio button{
+	border: none;
+	padding: 12px;
+	margin-left: 100px;
+	border-radius: 5px;
+	color: black;
+	font-weight: bold;
+	font-size: 16px;
+}
+.price{
+	color: #58db78;
+	font-size: 20px;
+	font-weight: bold;
+}
+.tittle{
+	font-weight: bold;
+	font-size: 25px;
+}
